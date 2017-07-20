@@ -33,8 +33,6 @@ $(document).ready(function() {
     });
 
     $('.js-form-submit').on('click', function (e) {
-        e.preventDefault();
-
         var $userEmail = $('input[name=_replyto]'),
             successCount = 0;
 
@@ -44,6 +42,7 @@ $(document).ready(function() {
             if (!$this.val()) {
                 $this.addClass('contacts__form-input--error');
                 $formInfo.addClass('contacts__message--error');
+                e.preventDefault();
             } else {
                 successCount++;
             }

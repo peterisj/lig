@@ -121,7 +121,7 @@ line-height: 2rem; }
 .section p {
 font-size: 15px;
 font-size: 0.9375rem;
-line-height: 1.33;
+line-height: 1.6;
 color: #0071C8; }
 .section h3, .section h4, .section h5, .section h6 {
 font-weight: 800;
@@ -159,11 +159,11 @@ width: 90%; }
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.2;
-  padding: 8px 14px;
-  padding: 0.5rem 0.875rem;
+  padding: 10px 14px;
+  padding: 0.625rem 0.875rem;
   border-radius: 1.875rem;
-  min-width: 150px;
-  min-width: 9.375rem;
+  min-width: 195px;
+  min-width: 12.1875rem;
   letter-spacing: 2px;
   letter-spacing: 0.125rem;
   text-align: center;
@@ -312,8 +312,7 @@ background-size: contain; }
   .section--team h3 {
 margin-top: 5.125rem; }
   .section__content {
-margin: 0 0 0 2.8125rem;
-max-width: 51.25rem; }
+margin: 0 0 0 2.8125rem; }
   .section h3 {
 margin: 0 0 1rem; }
   .section h6 {
@@ -342,7 +341,8 @@ top: inherit;
     -ms-transform: translateY(0);
         transform: translateY(0); }
   .section__content {
-margin: 0; }
+margin: 0;
+max-width: 51.25rem; }
   .section--team {
 padding-top: 2.5rem; }
 
@@ -825,11 +825,22 @@ width: 19.6875rem;
 display: block; }
  
 .nav--desktop .nav__logo {
-padding: 2.5rem 2.8125rem 0; }
+padding: 2.5rem 2.8125rem 0;
+text-align: center; }
  
 .nav--desktop .nav__logo a {
+position: relative;
 margin: 0;
-width: 100%; }
+width: 11.6875rem;
+height: 4.25rem;
+display: inline-block; }
+ 
+.nav--desktop .nav__logo svg {
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0; }
  
 .nav--desktop .nav__list {
 padding: 8.125rem 2.8125rem 0;
@@ -861,6 +872,8 @@ display: none; } } }
 .action__item {
 padding: 0 0 20px;
 padding: 0 0 1.25rem; }
+.action__column p {
+line-height: 1.33; }
 .action__column:last-of-type .action__item:last-of-type {
 padding: 0; }
 @media (min-width: 780px) {
@@ -875,10 +888,11 @@ float: left; }
  
 .action__column:first-of-type {
 margin: 0 6% 0 0; } }
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
  
 .action__column {
-width: 20.625rem; }
+width: 20.625rem; } }
+@media (min-width: 1300px) {
  
 .action__column:first-of-type {
 margin: 0 7.1875rem 0 0; } }
@@ -893,6 +907,8 @@ margin: 0 7.1875rem 0 0; } }
           flex-direction: column;
 }
 .contacts label {
+margin: 0 0 10px;
+margin: 0 0 0.625rem;
 display: block;
 font-size: 20px;
 font-size: 1.25rem;
@@ -1078,6 +1094,8 @@ width: 184px;
 width: 11.5rem;
 height: 84px;
 height: 5.25rem; }
+.participation__item p {
+line-height: 1.33; }
 @media (min-width: 780px) {
  
 .participation__item {
@@ -1103,6 +1121,9 @@ border-bottom: none; }
 .team__know {
 padding-top: 4px;
 padding-top: 0.25rem; }
+.team__person p + p {
+margin: 10px 0 0;
+margin: 0.625rem 0 0; }
 .team p.team__subtitle {
 margin: 12px 0 4px;
 margin: 0.75rem 0 0.25rem;
