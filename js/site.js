@@ -32,36 +32,6 @@ $(document).ready(function() {
         }
     });
 
-    $('.js-form-submit').on('click', function (e) {
-        var $userEmail = $('input[name=_replyto]'),
-            successCount = 0;
-
-        $.each($formInput, function () {
-            var $this = $(this);
-
-            if (!$this.val()) {
-                $this.addClass('contacts__form-input--error');
-                $formInfo.addClass('contacts__message--error');
-                e.preventDefault();
-            } else {
-                successCount++;
-            }
-        });
-
-        if( !(/(.+)@(.+){2,}\.(.+){2,}/.test($userEmail.val())) ) {
-            $userEmail.addClass('contacts__form-input--error');
-            $formInfo.addClass('contacts__message--error');
-            successCount--;
-        }
-
-        if (successCount === 3) {
-            $formInfo.addClass('contacts__message--success');
-            $formInfo.removeClass('contacts__message--error');
-        }
-
-        $htmlBody.animate({ scrollTop: $('#contacts-info').offset().top }, 300);
-    });
-
     $formInput.on('click, focus', function () {
        $(this).removeClass('contacts__form-input--error');
 

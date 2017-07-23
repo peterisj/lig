@@ -285,7 +285,12 @@
         </div>
       </div>
 
-      <form id="form" class="contacts__form" action="https://formspree.io/peteris@wtf.lv" method="POST">
+      <div style="display:none;" id="thankyou_message">
+        <h2><em>Thanks</em> for contacting us!
+          We will get back to you soon!</h2>
+      </div>
+
+      <form id="gform" class="contacts__form js-form" action="https://script.google.com/macros/s/AKfycbx2YwJzaJuAxxtCa_liNqyfzTCh9wqd7MKhh_fGZglelSD5j1A/exec" method="POST">
         <div class="contacts__form-details">
           <div class="contacts__form-group">
             <label for="name">Vārds</label>
@@ -293,7 +298,7 @@
           </div>
           <div class="contacts__form-group">
             <label for="email">E-pasts</label>
-            <input type="text" name="_replyto" class="contacts__form-input js-check-input">
+            <input type="text" name="email" class="contacts__form-input js-check-input js-form-email">
           </div>
         </div>
         <div class="contacts__form-message">
@@ -301,7 +306,7 @@
           <textarea name="message" cols="30" rows="10" class="contacts__form-area js-check-input"></textarea>
         </div>
         <div class="contacts__form-btn">
-          <button type="submit" form="form" value="send" class="button js-form-submit">Nosūtīt</button>
+          <button class="button js-form-submit">Nosūtīt</button>
         </div>
       </form>
     </div>
@@ -319,6 +324,7 @@
 		</div>
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="js/fullpage-2.9.4.js"></script>
+		<script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
 		<script type="text/javascript" src="js/site.js"></script>
 	</body>
 </html>
