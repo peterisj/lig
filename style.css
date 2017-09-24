@@ -1075,6 +1075,46 @@ border-bottom: none;
 -webkit-order: 2;
     -ms-flex-order: 2;
         order: 2; } }
+
+
+section .support-message {
+  margin-top: 64px;
+  margin-top: 4rem;
+  
+  margin-bottom: 32px;
+  
+  margin-bottom: 2rem;
+}
+
+
+section .support-message__text{
+font-size: 12px;
+font-size: 0.75rem; }
+
+
+section .support-message__img{
+padding-top: 12px;
+padding-top: 0.75rem;
+width: 75%;
+margin: auto;
+display: block; }
+
+
+@media (min-width: 780px) {
+ 
+section .support-message {
+margin-bottom: 6rem; }
+ 
+section .support-message__text{
+width: 66%;
+font-size: 0.75rem;
+display: block;
+float: left; }
+ 
+section .support-message__img{
+width: 34%;
+float: right;
+display: block; } }
 .participation {
   margin-top: 36px;
   margin-top: 2.25rem;
