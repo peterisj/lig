@@ -1080,9 +1080,9 @@ border-bottom: none;
 section .support-message {
   margin-top: 64px;
   margin-top: 4rem;
-  
+  overflow: hidden;
+
   margin-bottom: 32px;
-  
   margin-bottom: 2rem;
 }
 
