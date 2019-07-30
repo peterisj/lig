@@ -2,15 +2,24 @@ $(document).ready(function() {
     var $document = $(document),
         $window = $(window),
         $htmlBody = $('html, body'),
+        $menu = $('.js-menu'),
         $arrowToTop = $('.js-return-top'),
         $formInput = $('.js-check-input'),
         $formInfo = $('.js-form-message'),
-        $section = $('.js-section');
+        $section = $('.js-section'),
+        anchorsArr = [];
+
+    console.log('menu: ', $menu);
+
+    $menu.find('.nav__item').each(function (i, item) {
+        console.log('elements', $(this).data('menuanchor'));
+        anchorsArr.push($(this).data('menuanchor'));
+    });
 
     $('#fullpage').fullpage({
         menu: '#nav',
         lockAnchors: false,
-        anchors:['about-us', 'activities', 'participation', 'team', 'contacts'],
+        anchors: anchorsArr,
         hybrid:true,
         fitToSection: false,
         verticalCentered: true,

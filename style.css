@@ -343,7 +343,7 @@ top: inherit;
   .section__content {
 margin: 0;
 max-width: 51.25rem; }
-  .section--team {
+  .section--team, .section--vacancies {
 padding-top: 2.5rem; }
 
   .footer {
@@ -1207,6 +1207,48 @@ width: 85%; }
  
 .team__person, .team__know {
 width: 50%; } }
+.vacancies__title {
+margin-bottom: 16px !important;
+margin-bottom: 1rem !important;
+font-size: 24px;
+font-size: 1.5rem;
+line-height: 32px !important;
+line-height: 2rem !important; }
+.vacancies__content {
+padding-top: 10px;
+padding-top: 0.625rem; }
+.vacancies__content ul {
+font-size: 15px;
+font-size: 0.9375rem;
+line-height: 1.6;
+color: #0071C8; }
+.vacancies__content ul li {
+position: relative; }
+.vacancies__content ul li:before {
+position: relative;
+top: -3px;
+top: -0.1875rem;
+left: 0;
+margin-right: 10px;
+margin-right: 0.625rem;
+width: 6px;
+width: 0.375rem;
+height: 6px;
+height: 0.375rem;
+border-radius: 50%;
+display: inline-block;
+background-color: #0071C8;
+content: ''; }
+.vacancies__content ul + h4, .vacancies__content ul + p {
+margin-top: 16px;
+margin-top: 1rem; }
+.vacancies__content p + p {
+margin-top: 24px;
+margin-top: 1.5rem; }
+.vacancies__content a {
+color: #0071C8; }
+.vacancies__content a:hover, .vacancies__content a:focus {
+color: #005496; }
 
 /* Import pages */
 .page.page--index {
