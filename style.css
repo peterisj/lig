@@ -1207,6 +1207,12 @@ width: 85%; }
  
 .team__person, .team__know {
 width: 50%; } }
+.vacancies__box {
+padding-bottom: 16px;
+padding-bottom: 1rem; }
+.vacancies__col + .vacancies__col {
+margin-top: 16px;
+margin-top: 1rem; }
 .vacancies__title {
 margin-bottom: 16px !important;
 margin-bottom: 1rem !important;
@@ -1249,6 +1255,18 @@ margin-top: 1.5rem; }
 color: #0071C8; }
 .vacancies__content a:hover, .vacancies__content a:focus {
 color: #005496; }
+@media (min-width: 780px) {
+ 
+.vacancies__box {
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex; }
+ 
+.vacancies__col {
+width: 50%; }
+ 
+.vacancies__col + .vacancies__col {
+margin-top: 0; } }
 
 /* Import pages */
 .page.page--index {
